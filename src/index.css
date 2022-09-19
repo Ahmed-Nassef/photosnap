@@ -7,6 +7,10 @@
 
 :root {
   --font: 'DM Sans', sans-serif;
+  --big-header: 40px;
+  --big-header-responsive: 32px;
+  --normal-font: 15px;
+  --small-font: 12px;
   /* Colors */
   --color-white: #fff;
   --color-black: #000;
