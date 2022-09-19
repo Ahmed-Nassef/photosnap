@@ -1,0 +1,13 @@
+.responsive-menu{
+  @apply w-full fixed md:hidden text-[16px] font-[700] top-16 left-0  h-[250px] bg-white text-black flex flex-col items-center justify-center;
+}
+
+.responsive-menu__links-list{
+  @apply flex flex-col items-center text-center justify-center;
+}
+.responsive-menu__link{
+  @apply mt-4 tracking-widest hover:text-[#DFDFDF];
+}
+.responsive-menu__get-invite{
+  @apply py-[10px] px-[25px] bg-black text-white cursor-pointer hover:bg-[#DFDFDF] border-2 mt-8 w-[80%] flex items-center justify-center;
+}

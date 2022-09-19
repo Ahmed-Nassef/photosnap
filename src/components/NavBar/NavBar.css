@@ -1,0 +1,10 @@
+.nav-bar{
+  @apply font-[700] bg-white text-[12px] tracking-widest uppercase py-8  px-8 md:py-4 md:px-24 flex items-center justify-between;
+}
+
+.nav-bar__link{
+  @apply hover:text-[#DFDFDF] duration-300;
+}
+.nav-bar__get-invite{
+  @apply py-[10px] px-[25px] bg-black cursor-pointer hover:bg-[#DFDFDF] hover:text-black duration-300 text-white;
+}
