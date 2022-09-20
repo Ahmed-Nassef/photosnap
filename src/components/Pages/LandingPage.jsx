@@ -11,9 +11,10 @@ const LandingPage = () => {
     <main className='block bg-black'>
       <Header 
        section="create-and-share"
+       sectionStyle="flex-col-reverse md:flex-row"
        header="CREATE AND SHARE YOUR PHOTO STORIES."
        paragraph="Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others."
-       headerStyle="text-white tracking-widest max-w-[400px] mb-4 text-[30px] md:text-[40px]"
+       headerStyle="text-white tracking-widest max-w-[400px] mb-4"
        paragraphStyle="text-[#DFDFDF] mb-4"
        link="GET AN INVITE"
        imageUrl={CreateAndShare}
@@ -22,12 +23,11 @@ const LandingPage = () => {
        />
        <Header 
        section="beautiful-stories"
-       sectionStyle="flex flex-row-reverse"
-       header="BEAUTIFUL STORIES
-       EVERY TIME"
+       sectionStyle="flex-col-reverse md:flex-row-reverse"
+       header="BEAUTIFUL STORIES EVERY TIME"
        leftDivStyle="bg-white"
        paragraph="We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone."
-       headerStyle="tracking-widest max-w-[400px] mb-4 text-[30px] md:text-[40px] uppercase"
+       headerStyle="tracking-widest max-w-[400px] mb-4 uppercase"
        paragraphStyle="text-[#DFDFDF] mb-4"
        link="VIEW THE STORIES"
        linkStyle="text-black"
@@ -36,14 +36,16 @@ const LandingPage = () => {
        />
        <Header 
        section="create-and-share"
-       header="DESIGNED FOR
-       EVERYONE"
+       sectionStyle="flex-col-reverse md:flex-row"
+       header="DESIGNED FOR EVERYONE"
+       leftDivStyle="bg-white"
        paragraph="Photosnap can help you create stories that resonate with your audience. Our tool is designed for photographers of all levels, brands, businesses you name it."
-       headerStyle="text-white tracking-widest max-w-[400px] mb-4 text-[30px] md:text-[40px]"
+       headerStyle="text-black tracking-widest mb-4"
        paragraphStyle="text-[#DFDFDF] mb-4"
        link="VIEW THE STORIES"
+       linkStyle="text-black"
        imageUrl={designedForEveryOne}
-       BlackArrow={false}
+       BlackArrow={true}
        />
        <section id='stories' className='stories-section'>
 
