@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import Links from './Links'
 import mountains from '../../assets/stories/desktop/mountains.jpg'
 import GradientElement from './GradientElement';
-const Story = ({image,author,title}) => {
+const Story = ({image,author,title,date,dateShown}) => {
+  let [isDateShown, setIsDateShown] = useState(dateShown)
   let [isGradientShown,setIsGradientShown] = useState(false);
   let handleMouseEnter = () => {
     setIsGradientShown(true)
@@ -20,6 +21,7 @@ const Story = ({image,author,title}) => {
         </a>
       <div className='z-10 flex w-[80%] flex-col items-start m-8'>
         <a href="/stories">
+      {isDateShown && <p className='text-white text-[12px]'>{date}</p>}
       <h3 className='text-[23px] font-[700] text-white'>{title}</h3>
       <p className='text-white text-[12px]'>{author}</p>
       </a>

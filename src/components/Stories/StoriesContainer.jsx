@@ -1,10 +1,17 @@
 import React from 'react'
 
-const StoriesContainer = ({stories}) => {
+import Story from '../UI/Story'
+const StoriesContainer = ({stories,style,isDateShown}) => {
   return (
-    <>
-      
-    </>
+    <section className='stories-container'>
+      <div className='stories-container__wrapper'>
+        <div className={`stories-container__content ${style} grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4`}>
+      {stories.map((story)=>(
+        <Story title={story.title} date={story.date} dateShown={isDateShown} image={story.image} author={story.author} />
+      ))}
+        </div>
+      </div>
+    </section>
   )
 }
 
