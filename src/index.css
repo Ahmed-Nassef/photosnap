@@ -30,6 +30,3 @@ html,body, *{
   box-sizing: border-box;
   font-family: var(--font);
 }
-body{
-  height: 2000px;
-}
