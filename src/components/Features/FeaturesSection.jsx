@@ -1,13 +1,13 @@
 import React from 'react'
 import Feature from './Feature'
 
-const Features = ({features}) => {
+const FeaturesSection = ({features,featuresStyle}) => {
   return (
-    <section className="features-section bg-white">
-      <div className='features-section__wrapper p-16'>
-        <div className='features-section__content flex flex-col md:flex-row items-center justify-evenly'>
+    <section className={`features-section w-full bg-white`}>
+      <div className='features-section__wrapper w-full p-16'>
+        <div className={`features-section__content ${featuresStyle} w-full flex flex-col md:flex-row items-center justify-evenly`}>
       {features.map((feature)=>(
-        <Feature img={feature.img} title={feature.title} description={feature.description} />
+        <Feature key={feature.title} img={feature.image} title={feature.title} description={feature.description} />
       ))}
         </div>
       </div>
@@ -15,4 +15,4 @@ const Features = ({features}) => {
   )
 }
 
-export default Features
+export default FeaturesSection

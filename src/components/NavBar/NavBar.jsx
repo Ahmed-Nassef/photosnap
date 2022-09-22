@@ -9,12 +9,12 @@ const NavBar = () => {
   return (
     <nav className="nav-bar">
       <div className='nav-bar__logo'>
-        <img src={logo} alt="snap logo" />
+        <a href="/"><img src={logo} alt="snap logo" /></a>
       </div>
       <div className='nav-bar__links hidden md:block'>
         <ul className='nav-bar__links-list flex items-center'>
           <li className='nav-bar__link'><a href="#a">stories</a></li>
-          <li className='nav-bar__link ml-8'><a href="#a">features</a></li>
+          <li className='nav-bar__link ml-8'><a href="/features">features</a></li>
           <li className='nav-bar__link ml-8'><a href="#a">pricing</a></li>
         </ul>
       </div>

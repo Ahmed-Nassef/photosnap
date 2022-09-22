@@ -1,61 +1,53 @@
 import React from 'react'
 import Header from '../Header/Header'
 import NavBar from '../NavBar/NavBar'
-import CreateAndShare from '../../assets/home/desktop/create-and-share.jpg'
-import BeautifulStories from '../../assets/home/desktop/beautiful-stories.jpg'
-import designedForEveryOne from '../../assets/home/desktop/designed-for-everyone.jpg'
 import Story from '../UI/Story'
-import mountain from '../../assets/stories/desktop/mountains.jpg'
-import cityScapes from '../../assets/stories/desktop/cityscapes.jpg'
-import Voyage from '../../assets/stories/desktop/voyage.jpg'
 import Architecturals from '../../assets/stories/desktop/architecturals.jpg'
 import FeaturesSection from '../Features/FeaturesSection'
-import responsive from '../../assets/features/desktop/responsive.svg'
-import noLimit from '../../assets/features/desktop/no-limit.svg'
-import Embed from '../../assets/features/desktop/embed.svg'
 import Footer from '../Footer/Footer'
-
-
+import images from '../../constants/images'
+import data from '../../constants/data'
 const STORIES_DATA = [
   {
     title: "The Mountains",
     author: "by Benjamin Cruz",
-    imageURL: mountain
+    imageURL: images.mountain
   },
   {
     title: "Sunset cityscapes",
     author: "by John Applesseed",
-    imageURL: cityScapes
+    imageURL: images.cityScapes
   },
   {
     title: "18 Days Voyage",
     author: "by Alexie Barodin",
-    imageURL: Voyage
+    imageURL: images.Voyage
   },
   {
     title: "Architecturals",
     author: "by Samantha Brooke",
-    imageURL: Architecturals
+    imageURL: images.Architecturals
   },
 ]
 const features = [
   {
-    img:responsive,
+    image:images.responsive,
     title: "100% Responsive",
     description: "No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen."
   },
   {
-    img:noLimit,
+    image:images.noLimit,
     title: "No Photo Upload Limit",
     description: "Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go."
   },
   {
-    img:Embed,
+    image:images.Embed,
     title: "Available to Embed",
     description: "Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more."
   }
 ]
 const LandingPage = () => {
+  console.log(data.FEATURES_DATA.length)
   return (
     <>
     <NavBar />
@@ -69,7 +61,7 @@ const LandingPage = () => {
        headerStyle="text-white tracking-widest max-w-[400px] mb-4"
        paragraphStyle="text-[#DFDFDF] mb-4"
        link="GET AN INVITE"
-       imageUrl={CreateAndShare}
+       imageUrl={images.CreateAndShare}
        BlackArrow={false}
        isGradientShown={true}
        />
@@ -83,7 +75,7 @@ const LandingPage = () => {
        paragraphStyle="text-[#DFDFDF] mb-4"
        link="VIEW THE STORIES"
        linkStyle="text-black"
-       imageUrl={BeautifulStories}
+       imageUrl={images.BeautifulStories}
        BlackArrow={true}
        />
        <Header 
@@ -96,7 +88,7 @@ const LandingPage = () => {
        paragraphStyle="text-[#DFDFDF] mb-4"
        link="VIEW THE STORIES"
        linkStyle="text-black"
-       imageUrl={designedForEveryOne}
+       imageUrl={images.designedForEveryOne}
        BlackArrow={true}
        />
        <section id='stories' className='relative  stories-section'>
@@ -108,7 +100,7 @@ const LandingPage = () => {
           </div>
         </div>
        </section>
-       <FeaturesSection features={features} />
+       <FeaturesSection features={data.FEATURES_DATA.slice(0,3)} />
     </main>
     <Footer />
     </>
