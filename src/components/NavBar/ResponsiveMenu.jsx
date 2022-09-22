@@ -6,9 +6,9 @@ const ResponsiveMenu = () => {
     <>
     <nav className='responsive-menu'>
       <ul className='responsive-menu__links-list'>
-        <li className='responsive-menu__link'><a href="#a">stories</a></li>
-        <li className='responsive-menu__link'><a href="#a">features</a></li>
-        <li className='responsive-menu__link'><a href="#a">pricing</a></li>
+        <li className='responsive-menu__link'><a href="/stories">stories</a></li>
+        <li className='responsive-menu__link'><a href="/features">features</a></li>
+        <li className='responsive-menu__link'><a href="/pricing">pricing</a></li>
       </ul>
       <div className='responsive-menu__sperator w-[80%] mt-4 h-[1px] bg-black'></div>
       <div className='responsive-menu__get-invite'>

@@ -12,6 +12,7 @@ import responsive from '../assets/features/desktop/responsive.svg'
 import boostExposure from '../assets/features/desktop/boost-exposure.svg'
 import CustomDomain from '../assets/features/desktop/custom-domain.svg'
 import dragAndDrop from '../assets/features/desktop/drag-drop.svg'
+import bgBeta from '../assets/shared/desktop/bg-beta.jpg'
 export default {
   CreateAndShare,
 BeautifulStories,
@@ -26,5 +27,6 @@ hero,
 responsive,
 boostExposure,
 CustomDomain,
-dragAndDrop
+dragAndDrop,
+bgBeta
 };

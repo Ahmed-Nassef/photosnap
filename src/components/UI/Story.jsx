@@ -11,7 +11,7 @@ const Story = ({image,author,title}) => {
     setIsGradientShown(false)
   }
   return (
-    <div className={` row-span-1 hover:translate-y-[-50px] duration-[500ms] relative min-h-[500px] max-h-[500px] flex flex-col items-center justify-end`}
+    <div className={`row-span-1 hover:translate-y-[-50px] duration-[500ms] relative min-h-[500px] max-h-[500px] flex flex-col items-center justify-end`}
     onMouseEnter={()=>handleMouseEnter()}
     onMouseLeave = {MouseLeave}
     >

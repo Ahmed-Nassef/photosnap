@@ -6,6 +6,7 @@ import NavBar from '../NavBar/NavBar'
 import images from '../../constants/images'
 import FeaturesSection from '../Features/FeaturesSection'
 import data from '../../constants/data'
+import SubHeader from '../UI/SubHeader'
 const FeaturesPage = () => {
   return (
     <>
@@ -24,6 +25,7 @@ const FeaturesPage = () => {
        imageUrl={images.hero}
       />
       <FeaturesSection featuresStyle="grid grid-rows-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3" features={data.FEATURES_DATA} />
+      <SubHeader image={images.bgBeta} SubHeaderTitle="test" />
       <Footer />
     </>
   )
