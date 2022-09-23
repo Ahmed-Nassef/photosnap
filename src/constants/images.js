@@ -27,6 +27,7 @@ import runningFree from '../assets/stories/desktop/running-free.jpg';
 import somwarpet from '../assets/stories/desktop/somwarpet.jpg';
 import tripTonowhere from '../assets/stories/desktop/trip-to-nowhere.jpg';
 import unforeseenCorners from '../assets/stories/desktop/unforeseen-corners.jpg';
+import pricingHero from '../assets/pricing/desktop/hero.jpg'
 export default {
   CreateAndShare,
 BeautifulStories,
@@ -56,5 +57,6 @@ rageOfTheSea,
 runningFree,
 somwarpet,
 tripTonowhere,
-unforeseenCorners
+unforeseenCorners,
+pricingHero
 };

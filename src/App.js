@@ -8,6 +8,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import PricingPage from './components/Pages/PricingPage';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/' element={<LandingPage />} />
           <Route path='/features' element={<FeaturesPage />} />
           <Route path='/stories' element={<StoriesPage />} />
+          <Route path='/pricing' element={<PricingPage />} />
         </Routes>
       </BrowserRouter>
     </div>

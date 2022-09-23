@@ -1,12 +1,12 @@
 import React from 'react'
-import Footer from '../Footer/Footer'
-import Header from '../Header/Header'
 import NavBar from '../NavBar/NavBar'
+import Footer from '../Footer/Footer'
 import images from '../../constants/images'
-import FeaturesSection from '../Features/FeaturesSection'
-import data from '../../constants/data'
+import Header from '../Header/Header'
 import SubHeader from '../UI/SubHeader'
-const FeaturesPage = () => {
+import PricesContainer from '../Pricing/PricesContainer'
+import CompareSection from '../Pricing/CompareSection'
+const PricingPage = () => {
   return (
     <>
       <NavBar />
@@ -21,13 +21,15 @@ const FeaturesPage = () => {
        link="GET AN INVITE"
        LinkShown={false}
        isGradientShown={true}
-       imageUrl={images.hero}
+       imageUrl={images.pricingHero}
       />
-      <FeaturesSection featuresStyle="grid grid-rows-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3" features={data.FEATURES_DATA} />
-      <SubHeader image={images.bgBeta} SubHeaderTitle="features-subHeader" />
+      <PricesContainer />
+      {/* compare section */}
+      <CompareSection />
+      <SubHeader image={images.bgBeta} SubHeaderTitle="pricing-subHeader" />
       <Footer />
     </>
   )
 }
 
-export default FeaturesPage
+export default PricingPage

@@ -1,0 +1,14 @@
+.monthly{
+  @apply bg-[#DFDFDF] duration-500 before:block before:bg-black before:absolute before:w-[25px] before:h-[25px] before:rounded-full before:top-[50%] before:translate-y-[-50%] before:left-[5px];
+
+}
+.yearly{
+  @apply bg-black duration-500 before:block before:bg-white before:absolute before:w-[25px] before:h-[25px] before:rounded-full before:top-[50%] before:translate-y-[-50%] before:right-[5px];
+}
+
+.monthly-active{
+  @apply text-black;
+}
+.yearly-active{
+  @apply text-black;
+}
