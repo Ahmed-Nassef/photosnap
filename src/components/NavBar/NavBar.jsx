@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import {Link} from 'react-router-dom'
 import './NavBar.css'
 import logo from '../../assets/shared/desktop/logo.svg'
 import hamburger from '../../assets/shared/mobile/menu.svg'
@@ -9,17 +10,17 @@ const NavBar = () => {
   return (
     <nav className="nav-bar">
       <div className='nav-bar__logo'>
-        <a href="/"><img src={logo} alt="snap logo" /></a>
+        <Link to="/"><img src={logo} alt="snap logo" /></Link>
       </div>
       <div className='nav-bar__links hidden md:block'>
         <ul className='nav-bar__links-list flex items-center'>
-          <li className='nav-bar__link'><a href="/stories">stories</a></li>
-          <li className='nav-bar__link ml-8'><a href="/features">features</a></li>
-          <li className='nav-bar__link ml-8'><a href="/pricing">pricing</a></li>
+          <li className='nav-bar__link'><Link to="/stories">stories</Link></li>
+          <li className='nav-bar__link ml-8'><Link to="/features">features</Link></li>
+          <li className='nav-bar__link ml-8'><Link to="/pricing">pricing</Link></li>
         </ul>
       </div>
       <div className='nav-bar__get-invite hidden md:block'>
-        <a href="#a">get an invite</a>
+        <Link to="#Link">get an invite</Link>
       </div>
       {menuIsOpen?
        <div className='block md:hidden' onClick={()=>setMenuIsOpen(false)}>
