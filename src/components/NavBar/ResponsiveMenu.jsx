@@ -4,7 +4,7 @@ import './ResponsiveMenu.css'
 const ResponsiveMenu = () => {
   return (
     <>
-    <nav className='responsive-menu'>
+    <nav className='responsive-menu z-30'>
       <ul className='responsive-menu__links-list'>
         <li className='responsive-menu__link'><a href="/stories">stories</a></li>
         <li className='responsive-menu__link'><a href="/features">features</a></li>

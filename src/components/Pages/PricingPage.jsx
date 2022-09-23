@@ -24,8 +24,7 @@ const PricingPage = () => {
        imageUrl={images.pricingHero}
       />
       <PricesContainer />
-      {/* compare section */}
-      <CompareSection />
+      {/* <CompareSection /> */}
       <SubHeader image={images.bgBeta} SubHeaderTitle="pricing-subHeader" />
       <Footer />
     </>
