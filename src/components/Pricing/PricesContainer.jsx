@@ -27,6 +27,7 @@ const PricesContainer = () => {
              PriceValue="39"
              yearly={isYearly} 
              style="lg:mx-12 lg:scale-[1.2]"
+             isGradientShown={true}
              />
              <Price
             isDark={false}
